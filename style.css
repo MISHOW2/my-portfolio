@@ -52,11 +52,11 @@ body {
 }
 
 .project-container {
-  display: flex;
+  display: grid;
 
   gap: 40px; /* Space between description and images */
   margin: 40px 0;
-  flex-wrap: wrap; /* Allows stacking on smaller screens */
+  
 }
 
 
@@ -87,6 +87,9 @@ h2 {
   gap: 200px;
 }
 
+.project-images img{
+  width: 500px;
+}
 .project-description p {
   font-weight: 300;
   font-size: 20px;
