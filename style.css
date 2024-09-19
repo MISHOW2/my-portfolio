@@ -11,17 +11,18 @@ body {
   margin: 0;
   overflow-x: hidden; /* Prevent horizontal scroll */
   padding: 40px;
-
 }
 
 .header {
   display: flex;
   justify-content: center;
 }
-.close{
- display: none;
+
+.close {
+  display: none;
 }
-.menu-icon{
+
+.menu-icon {
   display: none;
 }
 
@@ -53,12 +54,9 @@ body {
 
 .project-container {
   display: grid;
-
   gap: 40px; /* Space between description and images */
   margin: 40px 0;
-  
 }
-
 
 .project-container a {
   font-size: 30px;
@@ -81,15 +79,15 @@ h2 {
   gap: 10px;
 }
 
-
 .project-images {
   display: flex;
   gap: 200px;
 }
 
-.project-images img{
+.project-images img {
   width: 500px;
 }
+
 .project-description p {
   font-weight: 300;
   font-size: 20px;
@@ -110,7 +108,7 @@ h2 {
   background-color: #0056b3;
 }
 
-/* Responsive design for smaller screens */
+/* Responsive design for tablets and small screens */
 @media (max-width: 768px) {
   body {
     padding: 20px;
@@ -129,6 +127,7 @@ h2 {
   .project-container {
     flex-direction: column;
     align-items: center;
+    gap: 20px; /* Reduce the gap on smaller screens */
   }
 
   .project-container a {
@@ -148,29 +147,30 @@ h2 {
     gap: 20px;
   }
 
-  img {
-    width: 100%;
+  .project-images {
+    gap: 20px;
+    flex-direction: column; /* Stack images vertically on smaller screens */
   }
 
-  .project-images {
-    flex-direction: column;
-    gap: 20px;
+  .project-images img {
+    width: 100%; /* Make the images responsive */
   }
 
   .project-description p {
-    width: 100%;
+    width: 100%; /* Text spans full width on smaller screens */
     font-size: 18px;
   }
 }
 
+/* Responsive design for mobile phones */
 @media (max-width: 480px) {
   body {
-
-    padding: 40px;
+    padding: 20px;
   }
-  .header{
-   justify-content: left;
-   margin-bottom: 100px;
+
+  .header {
+    justify-content: left;
+    margin-bottom: 100px;
   }
 
   .navigation {
@@ -184,7 +184,7 @@ h2 {
     z-index: 1000;
     display: none; /* Initially hidden */
   }
-  
+
   .navigation ul {
     list-style-type: none;
     padding: 0;
@@ -195,17 +195,17 @@ h2 {
     justify-content: center;
     height: 100%;
   }
-  
+
   .navigation ul li {
     margin: 20px 0;
   }
-  
+
   .navigation ul li a {
     color: white;
     font-size: 24px;
     text-decoration: none;
   }
-  
+
   .menu-icon {
     display: block;
     position: fixed;
@@ -214,10 +214,10 @@ h2 {
     font-size: 30px;
     color: white;
     cursor: pointer;
-    z-index: 1100; /* Make sure it's above the navigation */
+    z-index: 1100;
     width: 40px;
   }
-  
+
   .close {
     display: block;
     position: absolute;
@@ -225,12 +225,13 @@ h2 {
     left: 20px;
     cursor: pointer;
   }
-  
+
   .close img {
     width: 50px;
   }
-   #qualification {
-    font-size:30px;
+
+  #qualification {
+    font-size: 30px;
     width: 200px;
   }
 
@@ -246,6 +247,10 @@ h2 {
     font-size: 18px;
   }
 
+  .project-container {
+    gap: 20px; /* Less space between elements */
+  }
+
   .project-container a {
     font-size: 20px;
   }
@@ -256,5 +261,9 @@ h2 {
 
   .project-description p {
     font-size: 16px;
+  }
+
+  .project-images img {
+    width: 100%; /* Ensure images are responsive */
   }
 }
