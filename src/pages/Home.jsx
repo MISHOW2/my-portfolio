@@ -4,6 +4,7 @@ import me from '../assets/351019277_1528724984325682_6447338810638787455_n.jpg';
 import github from '../assets/icons/icons8-github-40.png';
 import linkedIn from '../assets/icons/icons8-linkedin-40.png';
 import whatsapp from '../assets/icons/icons8-whatsapp-logo-40.png';
+import varified from '../assets/icons/icons8-verified-50.png';
 import '../styles/home.css';
 
 function Home() {
@@ -59,8 +60,8 @@ function Home() {
       {/* About Me Section */}
       <div ref={aboutMeRef} className="about-me">
         <div>
-        <p>Get To Know Me</p>
-        <h3>About Me</h3>
+          <p>Get To Know Me</p>
+          <h3>About Me</h3>
         </div>
 
         <div className="about-info">
@@ -80,15 +81,112 @@ function Home() {
           <p className='about-description'>I’m a passionate front-end developer with a strong foundation in HTML, CSS, JavaScript, and React.js. I specialize in building responsive, user-friendly web applications with clean and efficient code. My journey in web development has been driven by curiosity and a love for creating seamless digital experiences.</p>
         </div>
 
-        
+
       </div>
 
       <div className="explore">
-        <div>
-        <p>Explore My</p>
-        <h3>Experience</h3>
+       
+       <div>
+          <p className='exploreP'>Explore My</p>
+          <h3 className='experienceP'>Experience</h3>
+        </div>
+          <div className="explore-info">
+            <div className="explore-containers">
+
+              <div className="explore-left-box">
+                <h2 className='explore-heading'>Frontend Development</h2>
+                <div className='experience'>
+                  <div className='experienc-box'>
+                  <img src={varified} alt="" />
+                      <div>
+                        <p className='language'>HTML</p>
+                        <p className='experienced'>Experienced</p>
+                      </div>
+                  </div>
+                  <div className='experienc-box'>
+                  <img src={varified} alt="" />
+                      <div>
+                        <p className='language'>CSS</p>
+                        <p className='experienced'>Experienced</p>
+                      </div>
+                  </div>
+                  <div className='experienc-box'>
+                  <img src={varified} alt="" />
+                      <div>
+                        <p className='language'>SASS</p>
+                        <p className='experienced'>Experienced</p>
+                      </div>
+                  </div>
+                  <div className='experienc-box'>
+                  <img src={varified} alt="" />
+                      <div>
+                        <p className='language'>JavaScript</p>
+                        <p className='experienced'>Intermediate</p>
+                      </div>
+                  </div>
+                  <div className='experienc-box'>
+                  <img src={varified} alt="" />
+                      <div>
+                        <p className='language'>React Js</p>
+                        <p className='experienced'>Experienced</p>
+                      </div>
+                  </div>
+                  <div className='experienc-box'>
+                  <img src={varified} alt="" />
+                      <div>
+                        <p className='language'>Material UI</p>
+                        <p className='experienced'>Intermediate</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="explore-left-box">
+                <h2 className='explore-heading'>Backend Development</h2>
+                <div className='experience'>
+                  <div className='experienc-box'>
+                  <img src={varified} alt="" />
+                      <div>
+                        <p className='language'>Node.js</p>
+                        <p className='experienced'>Experienced</p>
+                      </div>
+                  </div>
+                  <div className='experienc-box'>
+                  <img src={varified} alt="" />
+                      <div>
+                        <p className='language'>Express.js</p>
+                        <p className='experienced'>Experienced</p>
+                      </div>
+                  </div>
+                  <div className='experienc-box'>
+                  <img src={varified} alt="" />
+                      <div>
+                        <p className='language'>MongoDB</p>
+                        <p className='experienced'>Intermediate</p>
+                      </div>
+                  </div>
+                  <div className='experienc-box'>
+                  <img src={varified} alt="" />
+                      <div>
+                        <p className='language'>Mongoose</p>
+                        <p className='experienced'>Intermediate</p>
+                      </div>
+                  </div>
+                  <div className='experienc-box'>
+                  <img src={varified} alt="" />
+                      <div>
+                        <p className='language'>JWT Authentication</p>
+                        <p className='experienced'>Intermediate</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          
         </div>
       </div>
+
 
     </div>
   );

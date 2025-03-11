@@ -108,7 +108,7 @@ html {
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-  pointer-events: none;
+  pointer-events:none;
 }
 
 .about-description{
@@ -125,3 +125,76 @@ html {
   text-align: center; 
   gap: 60px;
 }
+
+.experienceP{
+  font-size: 36px;
+  margin: 0px;
+}
+
+.explore-containers{
+  display: flex;
+  justify-content: center;
+  gap: 155px;
+}
+
+.explore-left-box {
+  width: 351px;
+  position: relative;
+  border-radius: 20px;
+  padding: 11px 19px; /* Adjust padding to fit content inside */
+}
+
+.explore-left-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  
+  border-radius: 20px;
+  padding: 2px; /* Border thickness */
+  background: linear-gradient(to right, #18B7B7, #730DAE, #0FA22A);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events:none;
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 10px;
+  align-items: start; /* Align items to the top */
+  justify-content: center;
+}
+
+.explore-left-box img{
+  width: 26px;
+  height: 26px;
+}
+
+.experienc-box{
+  display: flex;
+  gap: 13px;
+  align-items:top left;
+}
+
+.experienc-box div{
+  display: flex;
+  flex-direction: column;
+   text-align:left;
+   padding: 0;
+   gap: 0;
+}
+
+.language{
+  font-size:16px ;
+  font-weight: bold;
+  margin: 0;
+}
+
+.experienced{
+  font-size: 12px;
+  font-weight: 200;
+  
+}
+
