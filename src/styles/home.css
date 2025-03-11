@@ -1,0 +1,29 @@
+.intro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:300px ;
+  margin-top:30px ;
+}
+
+.intro p{
+  font-size: 32px;
+  width: 552px;
+}
+
+.intro img{
+  width: 284;
+  height: 208px;
+  border-radius: 50%;
+}
+
+.social-links{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-links img{
+  height: 40px;
+
+}
