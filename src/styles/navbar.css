@@ -1,30 +1,55 @@
-nav{
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 30px;
+  padding: 10px 20px;
+
 }
 
-nav ul{
+nav ul {
   display: flex;
   align-items: center;
-  gap: 10px;
-  color:white;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-nav a{
+
+nav a {
   text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.left-side p {
+  font-size: 24px;
+  font-weight: bold;
   color: white;
 }
 
-.left-side p{
-  font-size: 24px;
-  font-weight: bold;
-
-}
-
-.right-side{
+.right-side {
   display: flex;
   align-items: center;
-  gap: 110px;
+  gap: 20px;
   font-size: 15px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .right-side {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

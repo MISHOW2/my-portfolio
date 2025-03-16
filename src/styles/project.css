@@ -1,7 +1,5 @@
-/* Projects.css */
-
 .projects-container {
-  padding: 50px;
+  padding: 50px 20px;
   text-align: center;
 }
 
@@ -15,7 +13,7 @@
 .projects-grid {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Changed auto-fit to auto-fill for better control */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
   justify-items: center;
 }
@@ -24,7 +22,6 @@
   background-color: rgb(49, 48, 48);
   padding: 25px;
   border-radius: 15px;
- 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   max-width: 310px;
   width: 100%;
@@ -44,7 +41,7 @@
 }
 
 .project-title {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #faf9f9;
   margin: 15px 0;
@@ -52,7 +49,7 @@
 
 .project-description {
   font-size: 1rem;
-  color: #666;
+  color: #e0e0e0; /* Lighter color for readability */
   line-height: 1.5;
   margin-bottom: 15px;
 }
@@ -79,8 +76,8 @@
 .project-links {
   margin-top: 15px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center; /* Center the links */
+  gap: 15px; /* Ensure spacing between links */
 }
 
 .github-link, .live-link {
@@ -103,17 +100,20 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .projects-container {
+    padding: 30px 15px;
+  }
   .projects-grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Fewer columns for smaller screens */
-    gap: 15px; /* Smaller gap */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
   }
 }
 
 @media (max-width: 480px) {
   .projects-title {
-    font-size: 2rem; /* Smaller title font on very small screens */
+    font-size: 2rem;
   }
   .projects-grid {
-    grid-template-columns: 1fr; /* One column for very small screens */
+    grid-template-columns: 1fr;
   }
 }

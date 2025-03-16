@@ -1,14 +1,12 @@
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  padding: 0%;
+  margin: 0%;
 }
 
 /* Section styling */
-.home {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 .intro,
 .about-me {
@@ -36,7 +34,7 @@ html {
   width: 552px;
 }
 
-.intro img{
+.myself{
   width: 284;
   height: 208px;
   border-radius: 50%;
@@ -198,3 +196,115 @@ html {
   
 }
 
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .intro {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro p {
+    font-size: 24px;
+    width: 90%;
+  }
+
+
+
+  .social-links {
+    justify-content: left;
+  }
+   
+  .social-links img{
+    height: 30px;
+  
+  }
+  
+
+  .about-me {
+    margin-top: 100px;
+  }
+
+  .about-info {
+    width: 90%;
+  }
+
+  .about-containers {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .left-box {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .explore {
+    padding: 10px;
+    margin-top: 100px;
+  }
+
+  .explore-containers {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+ 
+
+  .experience {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .home {
+    padding: 10px;
+  }
+
+  .intro p {
+    font-size: 20px;
+    text-align: left;
+  }
+
+
+
+  .about-me h3 {
+    font-size: 28px;
+  }
+
+  .about-me p {
+    font-size: 12px;
+  }
+
+  .explore {
+    gap: 40px;
+  }
+
+  .explore-left-box {
+    padding: 15px;
+  }
+
+  .experience {
+    gap: 15px;
+  }
+
+  .experienc-box {
+    gap: 8px;
+  }
+
+  .language {
+    font-size: 14px;
+  }
+
+  .experienced {
+    font-size: 10px;
+  }
+}
