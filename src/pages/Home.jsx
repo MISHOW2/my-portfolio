@@ -5,8 +5,9 @@ import github from '../assets/icons/icons8-github-40.png';
 import linkedIn from '../assets/icons/icons8-linkedin-40.png';
 import whatsapp from '../assets/icons/icons8-whatsapp-logo-40.png';
 import varified from '../assets/icons/icons8-verified-50.png';
+import Projects from '../components/Projects';
 import '../styles/home.css';
-
+import Form from '../components/Form';
 function Home() {
   const introRef = useRef(null);
   const aboutMeRef = useRef(null);
@@ -186,8 +187,8 @@ function Home() {
           
         </div>
       </div>
-
-
+        <Projects/>
+        <Form/>
     </div>
   );
 }
