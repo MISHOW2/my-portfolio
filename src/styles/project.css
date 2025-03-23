@@ -13,7 +13,7 @@
 .projects-grid {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 2fr));
   gap: 20px;
   justify-items: center;
 }

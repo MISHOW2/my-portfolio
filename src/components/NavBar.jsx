@@ -11,7 +11,7 @@ function NavBar() {
         <ul>
           <Link to='/'>Home</Link>   
         </ul>
-        <p>Download Cv</p>
+   
       </div>
     </nav>
   )
