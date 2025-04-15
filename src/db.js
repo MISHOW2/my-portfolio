@@ -17,7 +17,7 @@ export const projects = [
     image: barber,
     description: "A modern, stylish website design for a local barbershop — built to showcase services, attract bookings, and reflect the clean, sharp vibe of the brand.",
     tech: ["Html ", 'Css',"Js"],
-    
+    github:"https://github.com/MISHOW2/barber-shop",
     live: "https://barber-shop-jade-rho.vercel.app/",
   }
 ];
