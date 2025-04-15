@@ -1,6 +1,7 @@
 import home from './assets/Home.png'
 import coursematch from './assets/coursematch.png'
 import kalisto from './assets/kalisto.png'
+import barber from './assets/barber.png'
 export const projects = [
 
   {
@@ -10,5 +11,13 @@ export const projects = [
     tech: ["React Js ", 'Css'],
     
     live: "https://kalistoholdings.co.za/",
+  },
+  {
+    title: "Barber Shop",
+    image: barber,
+    description: "A modern, stylish website design for a local barbershop — built to showcase services, attract bookings, and reflect the clean, sharp vibe of the brand.",
+    tech: ["Html ", 'Css',"Js"],
+    
+    live: "https://barber-shop-jade-rho.vercel.app/",
   }
 ];
