@@ -39,7 +39,7 @@ Here are some of the key projects I've worked on:
 
 Feel free to reach out for any collaborations, job opportunities, or simply to chat about tech!
 
-- Email: [your.email@example.com](mailto:shibambomixo0@gmail.com)
+- Email: [shibambomixo0@gmail.com](mailto:shibambomixo0@gmail.com)
 - LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/mixo) 🌐
 - GitHub: [GitHub Profile](https://github.com/MISHOW2) 🐙
 
